@@ -1,0 +1,56 @@
+Suppose we want a list which can operate follwing basic functions:
+1. Store a given number of elements of a give data-type.
+2. Write/ modify element at a position
+3. Read element at the position
+
+Then the absolute answer is: ARRAY!!!
+
+for conditions
+1. int a[10];
+2. a[i] = x;
+print a[i];
+//////////////////////////////////////////////////////////////////////////
+Now we want to create such a list which can perform follwing tasks:
+1. In case of Empty list, it allocates the size 0
+2. Insert
+3. Remove
+4. Count
+5. Read/ modify the elements at the given position
+6. Specify the given data-type
+
+Solution: We can create an array of defining a maxsize, like
+------->#define MAXSIZE 97
+and then we can define our array
+------->int a[MAXSIZE];
+Any array has its their own tail and the element positioning starts with 0
+so we will also define...
+------->int end= -1;
+////////////////////////////////
+Now through defining maxsize, we can get enough amount of space to enter the values, but what about the rest of em
+those allocated storages will gonna waste and increases time complexity, in short, cost of operation
+
+OR 
+If an array is full and insufficient to store more, then what we can do??!!
+
+So when array is full, create a larger array, copy previous array into the newer one, and free the memory of the previous
+one.
+
+Problem is this operation and set of steps will be VERY COSTLY!! It has poor implementation.
+
+* ANALYZING THE TIME complexity OF THIS CASE
+
+1. Access, to read and write the elements at an index
+Constant time: O(1), since its an array and we have given the index
+
+2. Insert the data in between the elements
+Since Time will be proportional to the number of elements to be shifted
+then Time complexity will be O(n).
+The worst case would be,
+insert the element at position 0, that means every element present in the array has to shift wrt to their positions
+
+3. Similarly from Point 2, the time complexity for 
+Removing the elements will be
+O(n).
+
+4. Adding the elements
+o(n)
