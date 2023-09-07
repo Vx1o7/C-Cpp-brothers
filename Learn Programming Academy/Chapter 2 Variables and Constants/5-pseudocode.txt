@@ -1,0 +1,10 @@
+Varun's carpet cleaning service
+Charge: Rs. 1000 per room
+Tax Rate: 9%
+Estimates are valid for 30 Days
+
+Prompt the user for
+Price of the room
+Tax for each room
+Cost of each room, exclusive of taxes
+No of rooms to be cleaned:

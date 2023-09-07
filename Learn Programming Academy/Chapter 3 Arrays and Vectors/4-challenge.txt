@@ -1,0 +1,24 @@
+Section 7/ Chapter 3 Challenge
+
+Write a C++ program as follows:
+Declare 2 empty and integer declared vectors named as:
+vector1 and vector2.
+
+Add 10 and 20 in vector1 dynamically using pushback method
+Display the elements of vector1 using at method and find its size.
+
+Add 100 and 200 in vector1 dynamically using pushback method
+Display the elements of vector1 using at method and find its size.
+
+Create an empty 2D vector named as vector_2d
+Hint: vector_2d is a vector of vectors.
+
+Add vector1 into vector_2d dynamically using pushback method.
+Add vector2 into vector_2d dynamically using pushback method.
+
+Display the elements of vector_2d using at method.
+
+Change vector1.at(0) into 1000.
+
+Display the elements of vector_2d again using at method.
+Display the elements in vector1
